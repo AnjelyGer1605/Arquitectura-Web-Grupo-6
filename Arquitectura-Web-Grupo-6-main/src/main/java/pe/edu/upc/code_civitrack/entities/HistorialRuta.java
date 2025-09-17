@@ -1,0 +1,65 @@
+package pe.edu.upc.code_civitrack.entities;
+
+import jakarta.persistence.*;
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "HistorialRuta")
+public class HistorialRuta {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_historial")
+    private int idHistorialRuta;
+
+    @Column(name = "fecha", nullable = false)
+    private LocalDateTime fecha;
+
+    @Column(name = "descripcion", length = 100)
+    private String descripcion;
+
+    // Relación con Ruta
+    @ManyToOne
+    @JoinColumn(name = "id_ruta", nullable = false)
+    private Ruta ruta;
+
+    public HistorialRuta() {}
+
+    public HistorialRuta(int idHistorialRuta, LocalDateTime fecha, String descripcion, Ruta ruta) {
+        this.idHistorialRuta = idHistorialRuta;
+        this.fecha = fecha;
+        this.descripcion = descripcion;
+        this.ruta = ruta;
+    }
+
+    public int getIdHistorialRuta() {
+        return idHistorialRuta;
+    }
+
+    public void setIdHistorialRuta(int idHistorialRuta) {
+        this.idHistorialRuta = idHistorialRuta;
+    }
+
+    public LocalDateTime getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(LocalDateTime fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Ruta getRuta() {
+        return ruta;
+    }
+
+    public void setRuta(Ruta ruta) {
+        this.ruta = ruta;
+    }
+}
