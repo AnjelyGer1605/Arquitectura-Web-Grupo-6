@@ -1,4 +1,4 @@
-package pe.edu.upc.demotrabajocivitrak.Entities;
+package pe.edu.upc.code_civitrack.entities;
 
 import jakarta.persistence.*;
 
@@ -11,13 +11,28 @@ public class Conductor {
     @ManyToOne
     @JoinColumn(name = "idUsuario")
     private Usuario usuario;
+    private String nombre;
 
     public Conductor() {
+    }
+
+    public Conductor(int id, Usuario usuario, String nombre) {
+        this.id = id;
+        this.usuario = usuario;
+        this.nombre = nombre;
     }
 
     public Conductor(int id, Usuario usuario) {
         this.id = id;
         this.usuario = usuario;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public int getId() {

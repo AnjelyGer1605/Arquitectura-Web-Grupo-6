@@ -13,13 +13,17 @@ public class Categoria {
 
     @Column(name = "tipo",length =10 ,nullable = false)
     private String tipo;
+
+    private String nombre;
     public Categoria() {
     }
 
-    public Categoria(int idCategoria, String tipo) {
+    public Categoria(int idCategoria, String tipo, String nombre) {
         this.idCategoria = idCategoria;
         this.tipo = tipo;
+        this.nombre = nombre;
     }
+
 
     public int getIdCategoria() {
         return idCategoria;
@@ -35,5 +39,13 @@ public class Categoria {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 }

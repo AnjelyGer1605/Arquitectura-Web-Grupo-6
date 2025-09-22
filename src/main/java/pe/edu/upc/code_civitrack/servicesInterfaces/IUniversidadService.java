@@ -7,12 +7,12 @@ import java.util.List;
 
 public interface IUniversidadService {
 
-    public List<Universidad> list();
-    public void insert(Universidad universidad);
-    public void delete(int id);
-    public Universidad listId(int id);
-    public void update(Universidad universidad);
+    List<Universidad> list();
+    void insert(Universidad universidad);
+    void delete(int id);
+    Universidad listId(int id);
+    void update(Universidad universidad);
 
-    public List<Universidad> findBynombreUniversidad(String nombreUniversidad);
+    List<Universidad> findBynombreUniversidad(String nombreUniversidad);
 
 }

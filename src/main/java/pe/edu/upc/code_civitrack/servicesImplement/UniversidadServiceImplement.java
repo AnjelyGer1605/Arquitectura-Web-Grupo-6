@@ -36,11 +36,17 @@ public class UniversidadServiceImplement implements IUniversidadService {
 
     @Override
     public void update(Universidad universidad) {
-        uR.save(universidad);
+
     }
 
     @Override
     public List<Universidad> findBynombreUniversidad(String nombreUniversidad) {
-        return uR.findBynombreUniversidad_nombreUniversidad(nombreUniversidad);
+        // Llama al repositorio para buscar por nombre exacto
+        return uR.buscarPorNombre(nombreUniversidad);
     }
+
+    public List<Universidad> findByNombreUniversidadContiene(String nombreUniversidad) {
+        return uR.buscarPorNombreContiene(nombreUniversidad);
+    }
+
 }

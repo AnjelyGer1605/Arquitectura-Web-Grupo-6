@@ -1,5 +1,7 @@
 package pe.edu.upc.code_civitrack.dtos;
 
+import pe.edu.upc.code_civitrack.entities.Usuario;
+
 import java.time.LocalDateTime;
 
 public class PuntosUsuarioDTO {

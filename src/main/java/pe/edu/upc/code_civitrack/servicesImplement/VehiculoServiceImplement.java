@@ -40,11 +40,22 @@ public class VehiculoServiceImplement implements IVehiculoService {
 
     @Override
     public Vehiculo findByplacaVehiculo(String placaVehiculo) {
-        return vR.findByplacaVehiculo_placaVehiculo(placaVehiculo);
+        return null;
     }
 
     @Override
     public List<Vehiculo> findBymarcaVehiculo(String marcaVehiculo) {
-        return vR.findBymarcaVehiculo_marcaVehiculo(marcaVehiculo);
+        return List.of();
     }
+
+    @Override
+    public Vehiculo findByPlacaVehiculo(String placaVehiculo) {
+        return vR.buscarPorPlaca(placaVehiculo);
+    }
+
+    @Override
+    public List<Vehiculo> findByMarcaVehiculo(String marcaVehiculo) {
+        return vR.buscarPorMarca(marcaVehiculo);
+    }
+
 }

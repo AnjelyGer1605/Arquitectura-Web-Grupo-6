@@ -1,8 +1,8 @@
-package pe.edu.upc.demotrabajocivitrak.Dtos;
+package pe.edu.upc.code_civitrack.dtos;
 
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import pe.edu.upc.demotrabajocivitrak.Entities.Usuario;
+import pe.edu.upc.code_civitrack.entities.Usuario;
 
 public class ConductorDtos {
 

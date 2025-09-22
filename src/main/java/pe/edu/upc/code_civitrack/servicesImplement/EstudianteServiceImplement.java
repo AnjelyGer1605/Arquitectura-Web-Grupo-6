@@ -40,11 +40,11 @@ public class EstudianteServiceImplement implements IEstudianteService {
 
     @Override
     public Estudiante findBycodigoEstudiante(String codigoEstudiante) {
-        return eR.findBycodigoEstudiante_codigoEstudiante(codigoEstudiante);
+        return eR.findByCodigoEstudiante(codigoEstudiante);
     }
 
     @Override
     public List<Estudiante> findBycarreraEstudiante(String carreraEstudiante) {
-        return eR.findBycarreraEstudiante_carreraEstudiante(carreraEstudiante);
+        return eR.findByCarreraEstudiante(carreraEstudiante);
     }
 }

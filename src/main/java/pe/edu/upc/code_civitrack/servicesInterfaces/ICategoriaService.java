@@ -8,5 +8,5 @@ public interface ICategoriaService {
     //  Collection<Object> list();
 
     void insert(Categoria c);
-    public List<Categoria> list();
+    List<Categoria> list();
 }

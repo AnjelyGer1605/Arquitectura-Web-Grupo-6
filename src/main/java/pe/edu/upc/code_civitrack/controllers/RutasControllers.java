@@ -1,16 +1,17 @@
-package pe.edu.upc.demotrabajocivitrak.Controllers;
+package pe.edu.upc.code_civitrack.controllers;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pe.edu.upc.demotrabajocivitrak.Dtos.RutasDtos;
-import pe.edu.upc.demotrabajocivitrak.Dtos.UsuarioDtos;
-import pe.edu.upc.demotrabajocivitrak.Entities.Rutas;
-import pe.edu.upc.demotrabajocivitrak.Entities.Usuario;
-import pe.edu.upc.demotrabajocivitrak.Servicesinterfaces.IRutasservice;
-import pe.edu.upc.demotrabajocivitrak.Servicesinterfaces.IUsuarioservice;
+import pe.edu.upc.code_civitrack.entities.Rutas;
+import pe.edu.upc.code_civitrack.dtos.RutasDtos;
+import pe.edu.upc.code_civitrack.dtos.UsuarioDtos;
+import pe.edu.upc.code_civitrack.entities.Rutas;
+import pe.edu.upc.code_civitrack.entities.Usuario;
+import pe.edu.upc.code_civitrack.servicesInterfaces.IRutasservice;
+import pe.edu.upc.code_civitrack.servicesInterfaces.IUsuarioservice;
 
 import java.util.List;
 import java.util.stream.Collectors;

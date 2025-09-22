@@ -15,6 +15,6 @@ public interface IHistorialRutaRepository extends JpaRepository<HistorialRuta, I
     @Query("SELECT h FROM HistorialRuta h WHERE h.fecha = :fecha")
     List<HistorialRuta> buscarPorFecha(@Param("fecha") LocalDate fecha);
 
-    @Query("SELECT h FROM HistorialRuta h WHERE h.ruta.idRuta = :idRuta")
+    @Query("SELECT h FROM HistorialRuta h WHERE h.ruta.idruta = :idRuta")
     List<HistorialRuta> buscarPorRuta(@Param("idRuta") int idRuta);
 }

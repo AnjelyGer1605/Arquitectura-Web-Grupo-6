@@ -41,7 +41,7 @@ public class EstudianteController {
         Estudiante est = eS.listId(id);
         if (est == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body("No existe un vehiculo con el ID: " + id);
+                    .body("No existe un estudiante con el ID: " + id);
         }
         eS.delete(id);
         return ResponseEntity.ok("Vehiculo eliminado correctamente.");

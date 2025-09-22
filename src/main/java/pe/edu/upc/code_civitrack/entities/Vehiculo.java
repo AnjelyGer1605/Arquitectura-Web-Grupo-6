@@ -16,7 +16,7 @@ public class Vehiculo {
     private String marcaVehiculo;
 
 
-    @@ManyToOne
+    @ManyToOne
     @JoinColumn(name = "idConductor", nullable = false)
 
     private Conductor conductor;
@@ -27,11 +27,11 @@ public class Vehiculo {
 
     }
 
-    public Vehiculo(int idVehiculo, String placaVehiculo, String marcaVehiculo/*, Conductor conductor*/) {
+    public Vehiculo(int idVehiculo, String placaVehiculo, String marcaVehiculo, Conductor conductor) {
         this.idVehiculo = idVehiculo;
         this.placaVehiculo = placaVehiculo;
         this.marcaVehiculo = marcaVehiculo;
-        /*this.conductor = conductor;*/
+        this.conductor = conductor;
     }
 
     public int getIdVehiculo() {

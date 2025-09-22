@@ -8,7 +8,7 @@ import pe.edu.upc.code_civitrack.entities.Solicitud;
 import java.time.LocalDateTime;
 import java.util.List;
 
-public interface ISolicitudRepository extends JpaRepository<Solicitud,Long> {
+public interface ISolicitudRepository extends JpaRepository<Solicitud,Integer> {
 
     @Query("SELECT s FROM Solicitud s WHERE s.usuario.idUsuario = :idUsuario")
     List<Solicitud> buscarPorUsuario(@Param("idUsuario") int idUsuario);

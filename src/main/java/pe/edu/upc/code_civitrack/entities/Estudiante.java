@@ -12,7 +12,7 @@ public class Estudiante {
     @Column(name = "codigoEstudiante", nullable = false)
     private String codigoEstudiante;
 
-    @Column(name = "codigoEstudiante", nullable = false)
+    @Column(name = "carreraEstudiante", nullable = false)
     private String carreraEstudiante;
 
     @ManyToOne

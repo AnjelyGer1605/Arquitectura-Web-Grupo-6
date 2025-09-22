@@ -33,27 +33,21 @@ public class Solicitud {
     @Column(name = "fecha_envio", nullable = false)
     private LocalDateTime fechaEnvio;
 
-    // 🔹 Relaciones
 
-    // Relación con TipoDocumento
     @ManyToOne
     @JoinColumn(name = "documento_id", nullable = false)
     private Tipodocumento tipoDocumento;
 
-    // Relación con Usuario
     @ManyToOne
     @JoinColumn(name = "id_usuario", nullable = false)
     private Usuario usuario;
 
-    // Relación con Reporte
     @ManyToOne
     @JoinColumn(name = "reporte_id", nullable = false)
     private Reporte reporte;
 
-    // Constructor vacío
     public Solicitud() {}
 
-    // Constructor con parámetros
         public Solicitud(int idSolicitud, String nombre, String apellidos, String telefono, String correo, String rol, String mensaje, LocalDateTime fechaEnvio, Tipodocumento tipoDocumento, Usuario usuario, Reporte reporte) {
         this.idSolicitud = idSolicitud;
         this.nombre = nombre;

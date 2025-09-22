@@ -6,12 +6,12 @@ import java.util.List;
 
 public interface IEstudianteService {
 
-    public List<Estudiante> list();
-    public void insert(Estudiante estudiante);
-    public void delete(int id);
-    public Estudiante listId(int id);
-    public void update(Estudiante estudiante);
+    List<Estudiante> list();
+    void insert(Estudiante estudiante);
+    void delete(int id);
+    Estudiante listId(int id);
+    void update(Estudiante estudiante);
 
-    public Estudiante findBycodigoEstudiante(String codigoEstudiante);
-    public List<Estudiante> findBycarreraEstudiante(String carreraEstudiante);
+    Estudiante findBycodigoEstudiante(String codigoEstudiante);
+    List<Estudiante> findBycarreraEstudiante(String carreraEstudiante);
 }

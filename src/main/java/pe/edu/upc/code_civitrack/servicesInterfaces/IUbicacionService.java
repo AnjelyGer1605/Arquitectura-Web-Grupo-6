@@ -8,5 +8,5 @@ public interface IUbicacionService {
     // Collection<Object> list();
 
     void insert(Ubicacion u);
-    public List<Ubicacion> list();
+    List<Ubicacion> list();
 }

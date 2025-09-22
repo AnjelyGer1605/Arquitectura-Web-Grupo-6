@@ -1,11 +1,11 @@
-package pe.edu.upc.demotrabajocivitrak.Servicesimplements;
+package pe.edu.upc.code_civitrack.servicesImplement;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import pe.edu.upc.demotrabajocivitrak.Entities.Conductor;
-import pe.edu.upc.demotrabajocivitrak.Entities.Rutas;
-import pe.edu.upc.demotrabajocivitrak.Repositories.IConductorRepository;
-import pe.edu.upc.demotrabajocivitrak.Servicesinterfaces.IConductorservice;
+import pe.edu.upc.code_civitrack.entities.Conductor;
+import pe.edu.upc.code_civitrack.entities.Rutas;
+import pe.edu.upc.code_civitrack.repositories.IConductorRepository;
+import pe.edu.upc.code_civitrack.servicesInterfaces.IConductorservice;
 
 import java.util.List;
 

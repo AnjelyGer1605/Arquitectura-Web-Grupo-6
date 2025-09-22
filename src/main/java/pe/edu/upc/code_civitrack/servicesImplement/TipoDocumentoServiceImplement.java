@@ -18,10 +18,6 @@ public class TipoDocumentoServiceImplement implements ITipoDocumentoService {
         return tdR.findAll();
     }
 
-    @Override
-    public void insert(Tipodocumento tipoDocumento) {
-
-    }
 
     @Override
     public void insert(Tipodocumento tipoDocumento) {
@@ -36,11 +32,6 @@ public class TipoDocumentoServiceImplement implements ITipoDocumentoService {
     @Override
     public Tipodocumento listId(int id) {
         return tdR.findById(id).orElse(null);
-    }
-
-    @Override
-    public void update(Tipodocumento tipoDocumento) {
-
     }
 
     @Override

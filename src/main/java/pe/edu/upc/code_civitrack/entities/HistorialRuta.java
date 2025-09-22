@@ -20,11 +20,11 @@ public class HistorialRuta {
     // Relación con Ruta
     @ManyToOne
     @JoinColumn(name = "id_ruta", nullable = false)
-    private Ruta ruta;
+    private Rutas ruta;
 
     public HistorialRuta() {}
 
-    public HistorialRuta(int idHistorialRuta, LocalDateTime fecha, String descripcion, Ruta ruta) {
+    public HistorialRuta(int idHistorialRuta, LocalDateTime fecha, String descripcion, Rutas ruta) {
         this.idHistorialRuta = idHistorialRuta;
         this.fecha = fecha;
         this.descripcion = descripcion;
@@ -55,11 +55,11 @@ public class HistorialRuta {
         this.descripcion = descripcion;
     }
 
-    public Ruta getRuta() {
+    public Rutas getRuta() {
         return ruta;
     }
 
-    public void setRuta(Ruta ruta) {
+    public void setRuta(Rutas ruta) {
         this.ruta = ruta;
     }
 }

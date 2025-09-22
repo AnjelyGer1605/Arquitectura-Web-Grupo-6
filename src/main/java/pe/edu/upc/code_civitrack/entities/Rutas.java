@@ -1,4 +1,4 @@
-package pe.edu.upc.demotrabajocivitrak.Entities;
+package pe.edu.upc.code_civitrack.entities;
 
 import jakarta.persistence.*;
 
