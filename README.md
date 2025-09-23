@@ -2,11 +2,11 @@
   <h1>CiviTrack - Tu Aliado en la Movilidad Urbana</h1>
 <h2>Integrantes</h2>
 <ul>
-  <ul>Nicole Alexandra Alca Guillen - u202317439</ul>
   <ul>Adrian Jesus Moran Ynocente - u202221171</ul>
   <ul>Anjely Luciana Geronimo Quispe - u202311162</ul>
-  <ul>Katherine Naomi Meza Tupayachi - u202318726</ul>
   <ul>Fernando Sebastian Benel Uchofen - u202314499</ul>
+  <ul>Katherine Naomi Meza Tupayachi - u202318726</ul>
+  <ul>Nicole Alexandra Alca Guillen - u202317439</ul>
 </ul>
   <p>
     <strong>Acerca del Proyecto</strong><br><br>
