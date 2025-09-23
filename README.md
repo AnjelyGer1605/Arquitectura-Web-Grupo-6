@@ -15,6 +15,11 @@
   </p>
 
   <p>  
+    Swagger UI: http://localhost:8082/swagger-ui/index.html
+    Trello: https://trello.com/b/y03064Wa/arquitectura-web
+  </p>
+
+  <p>  
     Nuestra misión es fomentar una comunidad informada y activa que contribuya a mejorar la seguridad y eficiencia en los trayectos hacia centros de estudio, trabajo o cualquier destino.
     CiviTrack busca ser una herramienta útil, fácil de usar y diseñada específicamente para las necesidades reales de los jóvenes en la ciudad.
   </p>
