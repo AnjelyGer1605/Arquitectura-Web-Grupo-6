@@ -2,11 +2,11 @@
   <h1>CiviTrack - Tu Aliado en la Movilidad Urbana</h1>
 <h2>Integrantes</h2>
 <ul>
-  <li>Nicole Alexandra Alca Guillen - u202317439</li>
-  <li>Adrian Jesus Moran Ynocente - u202221171</li>
-  <li>Anjely Luciana Geronimo Quispe - u202311162</li>
-  <li>Katherine Naomi Meza Tupayachi - u202318726</li>
-  <li>Fernando Sebastian Benel Uchofen - u202314499</li>
+  <ul>Nicole Alexandra Alca Guillen - u202317439</ul>
+  <ul>Adrian Jesus Moran Ynocente - u202221171</ul>
+  <ul>Anjely Luciana Geronimo Quispe - u202311162</ul>
+  <ul>Katherine Naomi Meza Tupayachi - u202318726</ul>
+  <ul>Fernando Sebastian Benel Uchofen - u202314499</ul>
 </ul>
   <p>
     <strong>Acerca del Proyecto</strong><br><br>
@@ -15,8 +15,8 @@
   </p>
 
   <p>  
-    Swagger UI: http://localhost:8082/swagger-ui/index.html
-    Trello: https://trello.com/b/y03064Wa/arquitectura-web
+    <li>Swagger UI: http://localhost:8082/swagger-ui/index.html</li>
+    <li>Trello: https://trello.com/b/y03064Wa/arquitectura-web</li>
   </p>
 
   <p>  
